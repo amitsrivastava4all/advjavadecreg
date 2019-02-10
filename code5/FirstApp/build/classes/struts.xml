@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	<struts>
+	<package name="default" extends="struts-default">
+	<action name="hello" class="com.srivastava.actions.MyAction" >
+	<result name="success">/welcome.jsp</result>
+	</action>
+	<action name="login" class="com.srivastava.actions.MyAction" method="doLogin">
+	<result name="welcome">/dashboard.jsp</result>
+	</action>
+	</package>
+	</struts>
